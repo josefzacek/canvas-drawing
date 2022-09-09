@@ -1,0 +1,82 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.download-button {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 7px 0px #00000040;
+  padding: 20px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.download-button:hover {
+  animation: none;
+  box-shadow: 0px 0px 7px 0px #00000040;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #00000040;
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 10px #00000000;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #00000000;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #00000040;
+    box-shadow: 0 0 0 0 #00000040;
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 10px #00000000;
+    box-shadow: 0 0 0 10px #00000000;
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 #00000000;
+    box-shadow: 0 0 0 0 #00000000;
+  }
+}
+
+.download-button .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.download-button:hover .tooltiptext {
+  visibility: visible;
+}
+
+.download-button .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}

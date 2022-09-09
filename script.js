@@ -81,4 +81,26 @@ $(document).ready(function() {
     }
   }
 
+  function download(url){
+    var a = $("<a style='display:none'>")
+    .attr("href", url)
+    .attr("download", "canvas-draving.png")
+    .appendTo("body");
+
+    a[0].click();
+
+    a.remove();
+  }
+
+  function saveCapture(element) {
+    html2canvas(element).then(function(canvas) {
+      download(canvas.toDataURL("image/png"));
+    })
+  }
+
+  $('.download-button').click(function(){
+    var element = document.querySelector(".canvas-holder");
+    saveCapture(element)
+  })
+
 });
