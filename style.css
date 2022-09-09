@@ -50,3 +50,33 @@ body {
     box-shadow: 0 0 0 0 #00000000;
   }
 }
+
+.download-button .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.download-button:hover .tooltiptext {
+  visibility: visible;
+}
+
+.download-button .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
