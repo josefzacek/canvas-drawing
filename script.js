@@ -103,4 +103,7 @@ $(document).ready(function() {
     saveCapture(element)
   })
 
+  // add page-loaded class when page loads
+  $("body").addClass("page-loaded")
+
 });
