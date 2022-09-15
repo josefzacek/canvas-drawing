@@ -106,4 +106,10 @@ $(document).ready(function() {
   // add page-loaded class when page loads
   $("body").addClass("page-loaded")
 
+  // remove page-loaded class and close popup
+  $(".popup svg").click(function(){
+    $("body").removeClass("page-loaded");
+    $(".popup").hide();
+  })
+
 });
