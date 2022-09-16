@@ -2,6 +2,17 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body.page-loaded:before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  top: 0;
+  background: #ffffff;
+  z-index: 9999;
+}
+
 .popup {
   width: 100%;
   position: fixed;
