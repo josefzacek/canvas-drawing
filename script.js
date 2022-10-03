@@ -11,6 +11,10 @@ $(document).ready(function() {
   let stroke_width = "1";
   let is_drawing = false;
 
+  $(document).on('input', '#stroke-input', function() {
+    stroke_width = $(this).val();
+  });
+
   function start(event) {
     is_drawing = true;
     context.beginPath();
