@@ -8,7 +8,7 @@ $(document).ready(function() {
   let restore_array = [];
   let start_index = -1;
   let stroke_color = 'black';
-  let stroke_width = "6";
+  let stroke_width = "1";
   let is_drawing = false;
 
   function start(event) {
