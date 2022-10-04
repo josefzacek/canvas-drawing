@@ -95,4 +95,9 @@ $(document).ready(function() {
     $(".popup").hide();
   })
 
+  // open aside tool when clicked on it
+  $(".aside-menu .button svg.tool-icon").click(function(){
+    $(this).parent().addClass("active")
+  })
+
 });
