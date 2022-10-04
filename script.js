@@ -100,4 +100,9 @@ $(document).ready(function() {
     $(this).parent().addClass("active")
   })
 
+  // close aside tool using close button
+  $(".aside-menu .button svg.aside-close").click(function(){
+      $(".aside-menu .button").removeClass("active")
+  })
+
 });
