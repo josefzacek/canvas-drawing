@@ -8,8 +8,12 @@ $(document).ready(function() {
   let restore_array = [];
   let start_index = -1;
   let stroke_color = 'black';
-  let stroke_width = "6";
+  let stroke_width = "1";
   let is_drawing = false;
+
+  $(document).on('input', '#stroke-input', function() {
+    stroke_width = $(this).val();
+  });
 
   function start(event) {
     is_drawing = true;
@@ -89,6 +93,16 @@ $(document).ready(function() {
   $(".popup svg").click(function(){
     $("body").removeClass("page-loaded");
     $(".popup").hide();
+  })
+
+  // open aside tool when clicked on it
+  $(".aside-menu .button svg.tool-icon").click(function(){
+    $(this).parent().addClass("active")
+  })
+
+  // close aside tool using close button
+  $(".aside-menu .button svg.aside-close").click(function(){
+      $(".aside-menu .button").removeClass("active")
   })
 
 });
