@@ -103,7 +103,7 @@ body.page-loaded:before {
   visibility: visible;
 }
 
-.download-button .tooltiptext::after {
+.button .tooltiptext::after {
   content: " ";
   position: absolute;
   top: 100%;
