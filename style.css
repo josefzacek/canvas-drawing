@@ -86,7 +86,7 @@ body.page-loaded:before {
 }
 
   visibility: hidden;
-  width: 100px;
+  width: 60px;
   background-color: black;
   color: #fff;
   text-align: center;
