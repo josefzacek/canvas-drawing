@@ -95,6 +95,7 @@ body.page-loaded:before {
   position: absolute;
   z-index: 1;
   bottom: 110%;
+  font-size: 11px;
 }
 
 .button:hover .tooltiptext {
