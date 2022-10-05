@@ -80,11 +80,11 @@ body.page-loaded:before {
   }
 }
 
-.download-button .tooltiptext {
 .button {
   cursor: pointer;
 }
 
+.button .tooltiptext {
   visibility: hidden;
   width: 60px;
   background-color: black;
