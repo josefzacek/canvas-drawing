@@ -95,8 +95,6 @@ body.page-loaded:before {
   position: absolute;
   z-index: 1;
   bottom: 110%;
-  left: 50%;
-  margin-left: -50px;
 }
 
 .button:hover .tooltiptext {
@@ -119,3 +117,30 @@ body.page-loaded:before {
   top: 30vh;
 }
 
+.aside-menu .button.active {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.aside-menu .button svg.tool-icon {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.aside-menu .button svg.aside-close {
+  transform: scale(0.5);
+  display: none;
+}
+
+.aside-menu .button.active svg.aside-close {
+  display: inline-block;
+}
+
+.aside-menu .stroke-button input {
+  display: none;
+  height: 46px
+}
+
+.aside-menu .stroke-button.active input {
+  display: inline-block;
+}
