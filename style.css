@@ -23,6 +23,7 @@ body.page-loaded:before {
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 4px 0px #0000003b;
   z-index: 9999;
+  border-radius: 5px;
 }
 
 .popup svg {
