@@ -30,6 +30,12 @@ body.page-loaded:before {
   top: 20px;
   right: 20px;
   cursor: pointer;
+  transform: scale(0.8);
+  transition: all 0.25s;
+}
+
+.popup svg:hover {
+  transform: scale(0.8) rotate(180deg);
 }
 
 .download-button {
