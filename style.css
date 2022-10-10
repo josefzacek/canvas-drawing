@@ -57,6 +57,7 @@ body.page-loaded:before {
 
 .button {
   cursor: pointer;
+  position: relative;
 }
 
 .button .tooltiptext {
