@@ -39,22 +39,6 @@ body.page-loaded:before {
   transform: scale(0.8) rotate(180deg);
 }
 
-.download-button {
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 7px 0px #00000040;
-  padding: 20px;
-}
-
-.download-button:hover {
-  animation: none;
-  box-shadow: 0px 0px 7px 0px #00000040;
-}
-
 .button {
   cursor: pointer;
   position: relative;
