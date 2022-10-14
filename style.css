@@ -1,5 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body.page-loaded:before {
@@ -14,10 +16,10 @@ body.page-loaded:before {
 }
 
 .popup {
-  width: 100%;
+  width: calc(74vw - 13px);
   position: fixed;
-  max-width: 50vw;
-  padding: 40px;
+  max-width: 500px;
+  padding: 13px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -28,8 +30,8 @@ body.page-loaded:before {
 
 .popup svg {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   cursor: pointer;
   transform: scale(0.8);
   transition: all 0.25s;
@@ -37,6 +39,10 @@ body.page-loaded:before {
 
 .popup svg:hover {
   transform: scale(0.8) rotate(180deg);
+}
+
+.popup h1 {
+  font-size: 24px;
 }
 
 .button {
