@@ -19,7 +19,7 @@ body.page-loaded:before {
   width: 100%;
   position: fixed;
   max-width: 50vw;
-  padding: 40px;
+  padding: 13px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
