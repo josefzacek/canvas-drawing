@@ -16,9 +16,9 @@ body.page-loaded:before {
 }
 
 .popup {
-  width: 100%;
+  width: calc(74vw - 13px);
   position: fixed;
-  max-width: 50vw;
+  max-width: 500px;
   padding: 13px;
   left: 50%;
   top: 50%;
