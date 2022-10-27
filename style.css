@@ -118,4 +118,5 @@ body.page-loaded:before {
   height: 48px;
   position: absolute;
   left: 0;
+  cursor: pointer;
 }
