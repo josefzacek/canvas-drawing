@@ -105,4 +105,8 @@ $(document).ready(function() {
       $(".aside-menu .button").removeClass("active")
   })
 
+  // open color picker
+  $("input[type=color]").change(function(e){
+    stroke_color = $(this).val();
+  });
 });
