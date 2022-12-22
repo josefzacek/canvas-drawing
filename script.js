@@ -109,4 +109,14 @@ $(document).ready(function() {
   $("input[type=color]").change(function(e){
     stroke_color = $(this).val();
   });
+
+
+  // reset canvas
+  function resetCanvas() {
+    context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+  }
+  $(".aside-menu .reset-button").click(function(){
+    resetCanvas();
+  })
+
 });
